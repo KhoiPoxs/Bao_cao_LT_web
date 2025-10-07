@@ -1,7 +1,119 @@
 body {
     text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #ffffff
 }
 
 .form {
+    text-align: left;
+    border-radius: 10px;
+    text-align: left;
+}
+
+a:hover {
+    color: #007bff;
+}
+
+th {
+    padding: 8px;
+    text-align: left;
+}
+
+
+/* Màu cho dòng lẻ */
+
+tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+
+/* Màu cho dòng chẵn */
+
+tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+header {
     text-align: center;
+    /* Căn giữa toàn bộ nội dung trong header */
+    background-color: #f2f2f2;
+    /* Màu nền nhẹ để dễ nhìn */
+    padding: 10px;
+    /* Khoảng cách trên dưới */
+}
+
+header a {
+    margin: 0 20px;
+    /* Khoảng cách ngang giữa các liên kết */
+    text-decoration: none;
+    /* Bỏ gạch chân */
+    color: #333;
+    /* Màu chữ */
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    /* Căn giữa toàn bộ nội dung trong header */
+    background-color: #f2f2f2;
+    /* Màu nền nhẹ để dễ nhìn */
+    padding: 10px;
+    /* Khoảng cách trên dưới */
+}
+
+footer a {
+    margin: 0 20px;
+    /* Khoảng cách ngang giữa các liên kết */
+    text-decoration: none;
+    /* Bỏ gạch chân */
+    color: #333;
+    /* Màu chữ */
+    font-weight: bold;
+    text-align: left;
+}
+
+header a:hover {
+    color: #007bff;
+    /* Đổi màu khi rê chuột */
+}
+
+.btn {
+    float: right;
+    padding: 1px;
+    border-radius: 5px;
+    size: 80%;
+    background-color: #ffffff;
+}
+
+.btn:hover {
+    color: #3e99fa;
+}
+
+.menu-btn {
+    background-color: white;
+    color: #007bff;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+nav {
+    display: none;
+    /* Ẩn menu ban đầu */
+    flex-direction: column;
+    background-color: #f9f9f9;
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 8px;
+    display: block;
+}
+
+nav a:hover {
+    background-color: #ddd;
 }

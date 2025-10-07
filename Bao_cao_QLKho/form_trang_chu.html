@@ -1,72 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trang chủ</title>
-
     <link rel="stylesheet" href="style_form_trang_chu.css">
-
 </head>
 
 <body>
-    <form>
-        <label></label>
+
+    <footer>
         <div>
-            <label>Trang chủ: Hệ thống quản lí</label>
-            <button type="button" name="btn_trangchu_dangnhap" id="btn_trangchu_dangnhap" onclick="window.location.href='form_dang_nhap.html'">Đăng nhập</button>
-            <button type="button" name="btn_trangchu_thoat" id="btn_trangchu_thoat" onclick="window.close()">Thoát</button>
-
-            <h1>QUẢN LÝ KHO QUẦN ÁO</h1>
-
-            <form class="form">
-                <table>
-                    <label>Chức năng: </label> <br>
-                    <tr>
-                        <th>
-                            <a href="#">Quản lí nhập xuất</a><br>
-                        </th>
-                    </tr>
-
-                    <tr>
-                        <th>
-                            <a href="#">Quản lí nhân viên</a><br>
-                        </th>
-                    </tr>
-
-                    <tr>
-                        <th>
-                            <a href="#">Nhà cung cấp - khách hàng</a><br>
-                        </th>
-                    </tr>
-
-                    <tr>
-                        <th>
-                            <a href="#">Báo cáo - thống kê</a><br>
-                        </th>
-                    </tr>
-
-                    <tr>
-                        <td>
-                            <textarea readonly name="thongbao" id="thongbao">
-                                Thông báo
-                            </textarea>
-                        </td>
-                    </tr>
-                </table>
-            </form>
-            <br>
+            <label><b>TRANG CHỦ</b></label>
+            <label><b>HỆ THỐNG QUẢN LÍ</b></label>
+            <button type="button" class="btn" onclick="window.close()">Thoát</button>
+            <button type="button" class="btn" onclick="window.location.href='form_dang_nhap.html'">Đăng nhập</button>
         </div>
+    </footer>
 
-        <div>
-            <div class="menu" id="menu">
-                <a href="#">Trang chủ </a>
-                <a href="#">Giới thiệu </a>
-                <a href="#">Liên hệ </a>
-                <a href="#">Về chúng tôi</a>
-            </div>
-    </form>
+    <h1>QUẢN LÝ KHO QUẦN ÁO</h1>
+
+    <button type="button" class="menu-btn" onclick="toggleMenu()">☰ Menu</button>
+
+    <nav id="mainMenu" style="display:none;">
+        <a href="#">Quản lý nhập xuất</a>
+        <a href="#">Quản lý hàng hóa</a>
+        <a href="#">Nhà cung cấp - Khách hàng</a>
+        <a href="#">Báo cáo - Thống kê</a>
+    </nav>
+
+    <header class="header">
+        <div class="menu-links">
+            <a href="#">Giới thiệu </a>
+            <a href="#">Liên hệ </a>
+            <a href="#">Về chúng tôi</a>
+        </div>
+    </header>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById("mainMenu");
+            menu.style.display = menu.style.display === "block" ? "none" : "block";
+        }
+    </script>
+
 </body>
 
 </html>
