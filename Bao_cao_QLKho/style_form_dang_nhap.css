@@ -1,0 +1,101 @@
+body {
+    height: 100vh;
+    /* chiếm toàn màn hình */
+    display: flex;
+    justify-content: center;
+    /* căn giữa ngang */
+    align-items: center;
+    /* căn giữa dọc */
+    background-color: #d9eaf7;
+}
+
+h2 {
+    text-align: center;
+    color: blue;
+}
+
+form {
+    background: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.options a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.options a:hover {
+    text-decoration: underline;
+}
+
+form {
+    background: white;
+    padding: 25px 35px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+/*link "Quên mật khẩu" về bên phải */
+
+.quenmk {
+    text-align: right;
+    margin-top: 5px;
+}
+
+.quenmk a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 13px;
+}
+
+.quenmk a:hover {
+    text-decoration: underline;
+}
+
+input {
+    width: 95%;
+}
+
+input:hover {
+    border: 1px solid #007bff;
+}
+
+button {
+    text-align: center;
+    transition: background .2s;
+    width: 100%;
+    height: 35px;
+}
+
+button:hover {
+    background: #007bff;
+}

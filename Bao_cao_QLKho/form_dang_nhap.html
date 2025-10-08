@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Đăng nhập</title>
 
-    <script src="form_trang_chu.html"></script>
+    <link rel="stylesheet" href="style_form_dang_nhap.css">
 </head>
 
 <body>
     <form>
-        <h1>ĐĂNG NHẬP HỆ THỐNG</h1>
+        <h2>ĐĂNG NHẬP HỆ THỐNG</h2>
+        <br>
         <div>
             <label>Tên đăng nhập</label> <br>
             <input type="text" name="taikhoan" id="taikhoan" placeholder="Tên đăng nhập"> <br>
@@ -19,13 +20,10 @@
 
             <lable>Mật khẩu</lable> <br>
             <input type="password" name="matkhau" id="matkhau" placeholder="Mật khẩu"> <br>
-            <br>
-            <input type="checkbox" name="nhomatkhau" id="nhomatkhau">
-            <label>Nhớ mật khẩu</label> <br>
-            <br>
 
-            <a href="">Quên mật khẩu ?</a> <br>
-            <br>
+            <div class="quenmk">
+                <a href="">Quên mật khẩu ?</a> <br> <br>
+            </div>
 
             <button>Đăng nhập</button>
         </div>

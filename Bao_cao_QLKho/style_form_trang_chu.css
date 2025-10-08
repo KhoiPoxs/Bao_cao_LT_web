@@ -19,18 +19,32 @@ th {
     text-align: left;
 }
 
-
-/* Màu cho dòng lẻ */
-
-tr:nth-child(odd) {
-    background-color: #f2f2f2;
+.menu a {
+    text-decoration: none;
+    padding: 12px;
+    display: block;
+    text-align: left;
 }
 
 
-/* Màu cho dòng chẵn */
+/* Màu xen kẽ từng dòng */
 
-tr:nth-child(even) {
-    background-color: #ffffff;
+.menu a:nth-child(odd) {
+    background-color: #d9eaf7;
+    /* Màu thứ 1 (xanh nhạt) */
+}
+
+.menu a:nth-child(even) {
+    background-color: #8ba7cb;
+    /* Màu thứ 2 (xanh đậm hơn) */
+}
+
+
+/* Hiệu ứng khi hover */
+
+.menu a:hover {
+    background-color: #4a90e2;
+    color: white;
 }
 
 header {
@@ -40,6 +54,9 @@ header {
     /* Màu nền nhẹ để dễ nhìn */
     padding: 10px;
     /* Khoảng cách trên dưới */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 header a {
@@ -58,7 +75,6 @@ footer {
     background-color: #f2f2f2;
     /* Màu nền nhẹ để dễ nhìn */
     padding: 10px;
-    /* Khoảng cách trên dưới */
 }
 
 footer a {
