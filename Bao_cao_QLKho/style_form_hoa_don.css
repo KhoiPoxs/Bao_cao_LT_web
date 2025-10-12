@@ -1,0 +1,177 @@
+/* ----- Đặt màu nền tổng thể ----- */
+
+body {
+    /* nền xám nhạt */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #007bff;
+}
+
+
+/* ----- Tiêu đề chính ----- */
+
+h2 {
+    text-align: left;
+    color: #007bff;
+    /* xanh dương nổi bật */
+    margin-top: 20px;
+    margin-left: 18%;
+}
+
+
+/* ----- Form nhập liệu ----- */
+
+form {
+    background-color: #ffffff;
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* label và input */
+
+form label {
+    display: inline-block;
+    width: 150px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+form input,
+form select,
+form textarea {
+    width: 60%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+
+/* Khi click vào input, viền xanh */
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+
+/* ----- Nút bấm ----- */
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+
+/* Khi rê chuột */
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+/* ----- Bảng dữ liệu ----- */
+
+table {
+    size: 10%;
+    width: 50%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Đường kẻ bảng */
+
+th,
+td {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 10px;
+}
+
+
+/* Hàng tiêu đề */
+
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+
+/* Hàng xen kẽ màu */
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+
+/* Khi rê chuột lên hàng */
+
+tr:hover {
+    background-color: #e6f0ff;
+}
+
+
+/*Footer*/
+
+footer {
+    background-color: #007bff;
+    width: 100%;
+    top: 0;
+    display: flex;
+    width: 100%;
+    color: white;
+    background-color: #007bff;
+    padding: 10px;
+    z-index: 10;
+    position: relative;
+}
+
+footer a {
+    background-color: #007bff;
+    color: white;
+    padding: 5px;
+    margin-top: 10px;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    background-color: #0056b3;
+    transition: 0.2s;
+}
+
+h3 {
+    display: flex;
+    text-align: left;
+    color: #007bff;
+    /* xanh dương nổi bật */
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.btn_themphieu {
+    background-color: #28a745;
+    width: auto;
+    height: 40px;
+    margin-left: 15px;
+}

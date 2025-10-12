@@ -1,50 +1,58 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trang chủ</title>
+
+    <link rel="stylesheet" href="style_QLkho.css">
+
+    <!--Trang lấy icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     <link rel="stylesheet" href="style_form_trang_chu.css">
 </head>
 
 <body>
-
     <footer>
+        <h4><i class="fa-solid fa-house"></i> TRANG CHỦ</h4>
         <div>
-            <label><b>TRANG CHỦ</b></label>
-            <label><b>HỆ THỐNG QUẢN LÍ</b></label>
-            <button type="button" class="btn" onclick="window.close()">Thoát</button>
-            <button type="button" class="btn" onclick="window.location.href='form_dang_nhap.html'">Đăng nhập</button>
+            <label><i class="fa-solid fa-magnifying-glass"></i></label>
+            <input type="text" ,name="search" , id="search" placeholder="Tìm kiếm sản phẩm" class="search_lable">
+        </div>
+
+        <a href="#"><i class="fa-solid fa-gauge"></i> Tổng quan</a>
+        <a href="#"><i class="fa-solid fa-bell"></i> Thông báo</a>
+        <a href="#"><i class="fa-solid fa-question"></i> Hỗ trợ</a>
+        <a href="#"><i class="fa-solid fa-user"></i> Hồ sơ</a>
+
+        <div>
+            <a href="#" onclick="window.location.href='form_dang_nhap.html'"><i class="fa-solid fa-arrow-right-to-bracket"></i> Đăng nhập</a>
+            <a href="#" onclick="window.close()"><i class="fa-solid fa-arrow-right-from-bracket"></i>Thoát</a>
         </div>
     </footer>
+    <br>
 
-    <h1>QUẢN LÝ KHO QUẦN ÁO</h1>
+    <!-- <label><i class="fa-solid fa-magnifying-glass"></i></label>
+    <input type="text" ,name="search" , id="search" placeholder="Tìm kiếm sản phẩm" class="search_lable">-->
 
-    <button type="button" class="menu" onclick="toggleMenu()">☰ Menu</button>
-
-    <nav id="mainMenu" style="display:none;">
-        <a href="#">Quản lý nhập xuất</a>
-        <a href="#">Quản lý hàng hóa</a>
-        <a href="#">Nhà cung cấp - Khách hàng</a>
-        <a href="#">Báo cáo - Thống kê</a>
+    <!-- Thanh menu bên trái -->
+    <nav class="sidebar">
+        <h3><i class="fa-solid fa-bars"></i> Chức năng</h3>
+        <a href="#"><i class="fa-solid fa-house"></i> Trang chủ</a>
+        <a href="#"><i class="fa-solid fa-user-group"></i> Đối tác</a>
+        <a href="#" onclick="window.location.href='form_quanlyhh.html'"><i class="fa-solid fa-box-open"></i> Hàng hóa</a>
+        <a href="#" onclick="window.location.href='form_hoa_don.html'"><i class="fa-solid fa-arrow-right-arrow-left"></i> Nhập - Xuất</a>
+        <a href="#"><i class="fa-solid fa-chart-column"></i> Báo cáo & Thống kê</a>
+        <a href="#"><i class="fa-solid fa-gear"></i> Cài đặt</a>
     </nav>
 
-    <header class="header">
-        <div class="menu-links">
-            <a href="#">Giới thiệu </a>
-            <a href="#">Liên hệ </a>
-            <a href="#">Về chúng tôi</a>
-        </div>
+    <header>
+        <a href="#">Giới thiệu</a>
+        <a href="#">Liên hệ</a>
+        <a href="#">Về chúng tôi</a>
     </header>
-
-    <script>
-        function toggleMenu() {
-            const menu = document.getElementById("mainMenu");
-            menu.style.display = menu.style.display === "block" ? "none" : "block";
-        }
-    </script>
-
 </body>
 
 </html>

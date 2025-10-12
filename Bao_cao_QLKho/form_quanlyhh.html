@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý hàng hóa</title>
+
+    <link rel="stylesheet" href="style_QLkho.css">
+
+    <!--Trang web lấy icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style_form_quanlyhh.css">
+
+    <body>
+        <footer>
+            <div>
+                <a href="#" onclick="window.location.href='form_trang_chu.html'"><i class="fa-solid fa-arrow-left"></i> Quay lại</a>
+            </div>
+        </footer>
+
+        <h1>QUẢN LÝ HÀNG HÓA</h1>
+
+        <h3><i class="fa-solid fa-circle-info"></i> Thông tin các sản phẩm</h3>
+
+        <button class="btn_themsp" id="btn_themsp"><i class="fa-duotone fa-solid fa-plus"></i> Thêm sản phẩm</button> <br> <br>
+
+        <div class="form_sanpham">
+
+            <div class="product-card">
+                <div class="card-header">
+                    <i class="fa-solid fa-pen edit"></i>
+                    <i class="fa-solid fa-xmark delete"></i>
+                </div>
+                <br>
+                <img src="picture/img_quanjeannu.webp" alt="Quần jean" class="product-image">
+                <h3 style="text-align: center; color: black;">Quần jean nữ</h3>
+                <p style="color:#007bff;">Giá: <b>350.000đ</b></p>
+                <p>Số lượng: <b>15</b></p>
+                <button>Xem thêm</button>
+            </div>
+
+            <div class="product-card">
+                <div class="card-header">
+                    <i class="fa-solid fa-pen edit"></i>
+                    <i class="fa-solid fa-xmark delete"></i>
+                </div>
+                <br>
+                <img src="picture/img_quanjeannu.webp" alt="Quần jean" class="product-image">
+                <h3 style="text-align: center; color: black;">Quần jean nữ</h3>
+                <p style="color:#007bff;">Giá: <b>350.000đ</b></p>
+                <p>Số lượng: <b>15</b></p>
+                <button>Xem thêm</button>
+            </div>
+
+        </div>
+
+
+        <!-- Form thêm sản phẩm (ẩn lúc đầu) -->
+        <div id="form_themsp" class="form_themsp">
+            <input type="text" id="tenSP" placeholder="Tên sản phẩm">
+            <input type="number" id="giaSP" placeholder="Giá">
+            <input type="number" id="soLuongSP" placeholder="Số lượng">
+
+            <label>Hình ảnh:</label>
+            <input type="file" id="anhSP"><br>
+
+            <button id="btn_luu">Lưu</button>
+            <button id="btn_huy">Hủy</button>
+        </div>
+
+        <div id="dsSanPham" class="danh_sach"></div>
+        <script src="Quanlykho.js"></script>
+    </body>
+
+</html>

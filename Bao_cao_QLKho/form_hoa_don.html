@@ -5,24 +5,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quản lí phiếu nhập xuất</title>
+
+    <!--Trang web lấy icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style_QLkho.css">
+    <link rel="stylesheet" href="style_form_hoa_don.css">
 </head>
-<h1>QUẢN LÍ PHIẾU NHẬP XUẤT</h1> <br>
-
-<h2>Phiêu nhập</h2>
-<button>Chỉnh sửa</button> <br>
-
-<table>
-    <tr>
-        <th> Mã phiếu</th>
-
-    </tr>
-</table>
-
-<h2>Phiếu xuất</h2>
-<button>Chỉnh sửa</button> <br>
 
 <body>
+    <footer>
+        <a link href="#" onclick="window.location.href='form_trang_chu.html'"><i class="fa-solid fa-arrow-left"></i> Quay lại</a>
+    </footer>
+    <h1>QUẢN LÍ PHIẾU NHẬP XUẤT</h1> <br>
 
+    <h3><i class="fa-solid fa-circle-info"></i> Thông tin phiếu</h3>
+
+    <form method="POST" enctype="multipart/form-data">
+        <h3>Phiếu nhập</h3>
+
+        <button class="btn_themphieu" id="btn_themphieunhap"><i class="fa-duotone fa-solid fa-plus"></i> Thêm phiếu</button>
+        <table>
+            <tr>
+                <th>Mã phiếu nhập</th>
+                <th>Ngày nhập</th>
+                <th>Nhà cung cấp</th>
+                <th>Người lập</th>
+                <th>Tổng giá trị</th>
+            </tr>
+            <!-- PHP hiển thị dữ liệu tại đây -->
+        </table>
+
+        <br>
+
+        <h3>Phiếu xuất</h3>
+
+        <button class="btn_themphieu" id="btn_themphieuxuat"><i class="fa-duotone fa-solid fa-plus"></i> Thêm phiếu</button>
+        <table>
+            <tr>
+                <th>Mã phiếu xuất</th>
+                <th>Ngày xuất</th>
+                <th>Khách hàng</th>
+                <th>Người lập</th>
+                <th>Tổng giá trị</th>
+            </tr>
+            <!-- PHP hiển thị dữ liệu tại đây -->
+        </table>
+    </form>
 </body>
 
 </html>
